@@ -15,19 +15,7 @@ security:
 # Since there are no paths, path: {} is empty
 paths: {}
 schemas:
-  Artist:
-    type: object
-    required:
-      - username
-    properties:
-      artist_name:
-        type: string
-      artist_genre:
-        type: string
-      albums_recorded:
-        type: integer
-      username:
-        type: string
+
   DojoCardPaymentPayload:
     type: object
     required:  

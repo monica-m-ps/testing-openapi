@@ -1,0 +1,40 @@
+type: object
+properties:
+  cardDetails:
+    type: object
+    description: (needed?)
+    properties:
+      cardNumber:
+        type: string
+        description:   
+        $ref: ../../../api-definitions/prose/parameters/cardNumber.md
+        example: "4456530000001096"
+      cardName:
+        type: string
+        description:  
+        $ref: ../../../api-definitions/prose/parameters/cardName.md
+        example: "Test Cardholder"
+      expiryDate:
+        type: string
+        description: 
+        $ref: ../../../../api-definitions/prose/parameters/expiryDate.md
+        example: "12 / 24"
+      cv2:
+        type: string
+        description: 
+        $ref: ../../../../prose/parameters/cv2.md
+        example: "020"
+    required:  
+      - cardNumber
+  userEmailAddress:
+    (confirm with Deniss)
+    type: string
+    example: "email@test.com"
+  userPhoneNumber:
+    type: string
+    example: "0733323423"
+  isSandbox: (create description)
+    type: boolean
+    example: true
+required:  
+  - cardDetails

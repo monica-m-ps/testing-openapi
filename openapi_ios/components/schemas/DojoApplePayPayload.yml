@@ -1,0 +1,21 @@
+type: object
+properties:
+  applePayConfig:
+    type: object
+    properties:
+      merchantIdentifier:
+        type: string
+        example: "co.uk.merchant"
+      collectBillingAddress:
+        type: boolean
+        example: true
+      collectShippingAddress:
+        type: boolean
+        example: true
+      collectEmail:
+        type: boolean
+        example: true
+    required:  
+      - merchantIdentifier
+  isSandbox:
+    type: boolean
